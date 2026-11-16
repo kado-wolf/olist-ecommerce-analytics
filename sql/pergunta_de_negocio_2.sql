@@ -14,7 +14,7 @@ with base_pedidos as (
 select
 	order_id,
 	case 
-		when cast(order_delivered_customer_date as date) < cast(order_estimated_delivery_date as date) then 'No Prazo'
+		when cast(order_delivered_customer_date as date) <= cast(order_estimated_delivery_date as date) then 'No Prazo'
 		else 'Atraso'
 	end
 		as status_entrega
