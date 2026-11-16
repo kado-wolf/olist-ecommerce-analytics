@@ -1,4 +1,4 @@
-# Regras de Limpeza - Análise Inicial
+# SQL. Regras de Limpeza - Análise Inicial
 
 - R1. Atraso só é medido em pedidos com status 'delivered'
 - R2. Pedidos com status 'delivered' sem data de entrega (8 pedidos) irão ser excluídos da análise
@@ -8,3 +8,5 @@
 
 - R5a. Os meses incompletos não poderão estar em análises mês a mês para não distorcer os comparativos. 
 - R5b. Os meses incompletos precisa ser investigados em relação ao viés de sobrevivência, para não termos problemas de viés no modelo
+
+# SQL. Criar view 
